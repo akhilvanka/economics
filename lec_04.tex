@@ -1,0 +1,126 @@
+\chapter{\normalfont Basic Economic Concepts}
+Short Recap: The previous chapter focused on advantages and basic charts and diagrams. This chapter will take those concepts one step further. This chapter will focus on \textbf{Gains from trade} and what parameters for trade are beneficial.
+\lecture{4}{fri 17 sep 8:35}{Specializations}
+\section{Gains from Trade}
+Gains from trade allow countries to consume outside their PPC. However it does become quite annoying to calculate the parameters in which a trade is beneficial to two countries. 
+\begin{figure}[h!]
+    \begin{center}
+        \begin{subfigure}[b]{0.45\textwidth}
+        \begin{center}
+        \begin{tikzpicture}
+        \begin{axis}[
+        scale=0.75,
+        xmin = 0, xmax = 35,
+        ymin = 0, ymax = 45, 
+        axis lines* = left,
+       % xtick = {0}, ytick = \empty,
+        axis on top, 
+        clip = false,
+        ]
+        \addplot [domain = 0:45, restrict y to domain = 0:35, samples=10000, color = blue, very thick, name path = US]{-x+30};
+        \end{axis}
+        \end{tikzpicture}
+        \caption{USA}
+        \label{fig:usa}
+    \end{center}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.45\textwidth}
+        \begin{center}
+        \begin{tikzpicture}
+        \begin{axis}[
+        scale=0.75,
+        xmin = 0, xmax = 35,
+        ymin = 0, ymax = 45, 
+        axis lines* = left,
+        %xtick = {0}, ytick = \empty,
+        axis on top, 
+        clip = false,
+        ]
+        \addplot [domain = 0:45, restrict y to domain = 0:35, samples = 10000, color = blue, very thick, name path = Brazil]{-1/2*x+10};
+        \end{axis}
+        \end{tikzpicture}
+        \caption{Brazil}
+        \label{fig:brazil}
+    \end{center}
+    \end{subfigure}
+    \caption{PPC of two countries}
+    \label{fig:usa and brazil}
+\end{center}
+\end{figure}
+\newpage
+\textbf{Steps to determine gains from trade}
+\begin{enumerate}[label=Step \arabic*:]
+    \item Make A table
+        \begin{itemize}
+            \item[!] Note - Is it outputs or inputs
+        \end{itemize}
+    \item Determine opportunity cost for each producer for each product
+    \item Determine comparative advantage for each producer
+    \item Determine the parameters of gains from trade
+    \item Determine who should export goods and import goods
+\end{enumerate}
+
+So first, make a table if it is not given to you already so that it makes calculation and reasoning a lot easier. 
+\begin{table}[h!]
+    \begin{center}
+        \begin{tabular}{l|l|l}
+            \toprule
+            \textbf{} & \textbf{Wheat} & \textbf{Sugar}\\
+            \midrule
+            USA & 30 & 30\\
+            Brazil & 10 & 20\\
+            \bottomrule
+        \end{tabular}
+        \caption{Table to determine OC and CA}
+        \label{tab:usa and brazil}
+    \end{center}
+\end{table}
+
+Then do some quick analysis of the table to determine your OC.
+
+\begin{table}[h!]
+    \begin{center}
+        \begin{tabular}{l|l|l}
+            \toprule
+            \textbf{} & \textbf{Wheat} & \textbf{Sugar}\\
+            \midrule
+            USA & 30 (1 w cost 1 s) & 30 (1 s costs 1 w)\\
+            Brazil & 10 (1 w costs 2 s) & 20 (1 s costs $\frac{1}{2}$ w)\\
+            \bottomrule
+        \end{tabular}
+        \caption{Table to determine OC and CA}
+        \label{tab:usa and brazil(oc)}
+    \end{center}
+\end{table}
+
+Then after comparing the OC of each country, you establish who should export and import said goods. In this scenario, the U.S. has a comparative advantage in wheat, and so they should produce it and export it to Brazil. This also means that the U.S. should import sugar from Brazil. The opposite is also true, where Brazil should export sugar and import U.S. wheat. 
+
+\begin{example}
+    Now check, if the following trade agreement is advantageous for both countries?
+    \begin{itemize}
+        \item \textbf{Trade 1 ton of wheat for 1.5 tons of sugar}
+    \end{itemize}
+    A simple way to solve this is just to look at the table.
+
+\begin{table}[!h]
+    \begin{center}
+        \begin{tabular}{l|l|l}
+            \toprule
+            \textbf{} & \textbf{Wheat} & \textbf{Sugar}\\
+            \midrule
+            USA & 30 (1 w cost 1 s) & 30 (1 s costs 1 w)\\
+            Brazil & 10 (1 w costs 2 s) & 20 (1 s costs $\frac{1}{2}$ w)\\
+            \bottomrule
+        \end{tabular}
+    \end{center}
+\end{table}
+The question is asking in terms of 1 wheat, so examine that portion of the table. Since the U.S. specializes in wheat, they want to get \textbf{MORE THAN} 1 sugar for 1 wheat in trade. Since Brazil specializes in sugar, they want to give up \textbf{LESS THAN} 2 sugars for 1 what in trade. 
+
+\textbf{1.5 tons of sugar for 1 wheat is a gain for both countries}
+
+\end{example}
+
+
+
+
